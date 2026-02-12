@@ -38,9 +38,7 @@
             overflow-x: hidden;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             font-family: 'Playfair Display', serif;
             color: var(--text-white);
             font-weight: 400;
@@ -171,13 +169,13 @@
         /* --- SERVICES --- */
         .services {
             padding: 80px 0;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), img src="images/background.jpg" alt="background image";
+            /* FIXED: Now uses relative path instead of C: drive */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/background.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             text-align: center;
-            background-color: #111;
-            /* Fallback */
+            background-color: #111; /* Fallback */
         }
 
         .section-title {
@@ -282,7 +280,7 @@
             margin-bottom: 5px;
         }
 
-        /* --- CONTACT FORM (GLOBAL) --- */
+        /* --- CONTACT FORM (ADDED) --- */
         .contact-section {
             background-color: var(--bg-black);
             padding: 80px 0;
@@ -333,7 +331,7 @@
         }
 
         .form-control {
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgba(255, 255, 255, 0.05); /* Dark Glass Effect */
             border: 1px solid #333;
             padding: 15px;
             color: var(--text-white);
@@ -461,7 +459,6 @@
             }
         }
     </style>
-
 </head>
 
 <body>
@@ -489,8 +486,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <img src="images/Logo/ASimmonds-logo.webp"
-                alt="A. Simmonds Logo" class="hero-logo">
+            <img src="images/Logo/ASimmonds-logo.webp" alt="A. Simmonds Logo" class="hero-logo">
 
             <p class="hero-tagline">
                 ESTABLISHED TRADITION &bull; MODERN ELEGANCE
@@ -575,7 +571,7 @@
     </section>
 
     <section class="showcase" id="gifts"
-        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/winter background.jpg') no-repeat center center/cover;">
+        style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/winter-background.jpg') no-repeat center center/cover;">
         <div class="container">
 
             <div style="text-align: center; margin-bottom: 60px;">
@@ -707,6 +703,4 @@
 
 </body>
 
-
 </html>
-
